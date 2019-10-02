@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/gojek" />
+
+        <TextView
+            android:id="@+id/text_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:gravity="center"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imgGofood"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/text_home"
+            android:onClick="goFood"
+            android:src="@drawable/gofood" />
+
+        <TextView
+            android:id="@+id/txtGofood"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgGofood"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:text="@string/go_food_title"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imgGoride"
+            android:layout_width="200dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/text_home"
+            android:layout_toRightOf="@id/imgGofood"
+            android:onClick="goRide"
+            android:src="@drawable/goride" />
+
+        <TextView
+            android:id="@+id/txtGoride"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgGoride"
+            android:layout_toRightOf="@id/txtGofood"
+            android:gravity="center"
+            android:text="@string/go_ride_title"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imgGomart"
+            android:layout_width="200dp"
+            android:layout_height="115dp"
+            android:layout_below="@id/txtGofood"
+            android:layout_marginTop="50dp"
+            android:onClick="goMart"
+            android:src="@drawable/gomart" />
+
+        <TextView
+            android:id="@+id/txtGomart"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgGomart"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/go_mart_title"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imgGosend"
+            android:layout_width="200dp"
+            android:layout_height="115dp"
+            android:layout_below="@id/txtGoride"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/imgGomart"
+            android:onClick="goSend"
+            android:src="@drawable/gosend" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgGosend"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/txtGomart"
+            android:gravity="center"
+            android:text="@string/go_send_title"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
